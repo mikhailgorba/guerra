@@ -29,7 +29,6 @@
     background-position: 50%;
     left:0px;
     top:0;
-    margin-top:-50%;
     height: 100%;
     width:100%;
     margin:0;
@@ -37,10 +36,11 @@
 
    }
    .div_logo {
-    position: relative;
-    top: 25%;
-    left: 30%;
-    bottom: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
  
    }
    #logo {
@@ -55,7 +55,7 @@
         <div class="div_logo" >
           <img id="logo" src="img/logomarca44.png" alt="Logo">
           <figcaption ></figcaption>
-          <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>começar</a>
+          <a class="center waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>começar</a>
         </div>
     </header>
 
