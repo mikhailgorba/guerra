@@ -24,16 +24,17 @@
      float: none;
      display: inline-block;
    }
-   #header {
+  #header {
    
-    background-position: 50%;
-    background-repeat: no-repeat;
-    left:0px;
-    top:0;
+    
+    background-repeat: repeat;
+  
     height: 100%;
-    width:100%;
-    margin:0;
+    width: 100%;
+  
     background-image: url('img/background.jpg');
+    background-position: 50%;
+
 
    }
    .div_logo {
@@ -45,7 +46,9 @@
  
    }
    #logo {
-    height: auto;
+    height: 100%;
+    width: 100%;
+
     
    }
   </style>
@@ -56,7 +59,10 @@
         <div class="center div_logo" >
           <img id="logo" src="img/logomarca44.png" alt="Logo">
           <figcaption ></figcaption>
-          <a class="center waves-effect waves-light btn-large" href="#start"><i class="material-icons right">cloud</i>começar</a>
+          <ul class="main-nav">
+            <li>
+            <a class="center waves-effect waves-light btn-large" href="#start"><i class="material-icons right">cloud</i>começar</a></li>
+          </ul>
         </div>
     </header>
 
