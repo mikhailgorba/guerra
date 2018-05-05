@@ -52,10 +52,11 @@
     
    }
   </style>
+
 </head>
 <body>
 
-    <header id="header" class="section">
+    <header id="header" class="section scrollspy">
         <div class="center div_logo" >
           <img id="logo" src="img/logomarca44.png" alt="Logo">
           <figcaption ></figcaption>
@@ -67,15 +68,15 @@
     </header>
 
   <div style=" box-sizing: border-box;" >
-    <header>
+    <header class="section scrollspy" id="start">
       
-      <nav class="white" role="navigation" id="start">
-    <div class="nav-wrapper">
-      <ul class="center hide-on-med-and-down">
-        <li><a  href="#">Contato</a></li>
-        <li><a  href="#">Sobre Nós</a></li>
-        <li><a  href="#">LOCALIZAÇÃO</a></li>
-        <li><a href="#">HOME</a></li>
+      <nav class="white " role="navigation" >
+    <div class="nav-wrapper ">
+      <ul class="center fixed hide-on-med-and-down">
+        <li><a  href="#contato">Contato</a></li>
+        <li><a  href="#sobre_nos">Sobre Nós</a></li>
+        <li><a  href="#localizacao">LOCALIZAÇÃO</a></li>
+        <li><a href="#header">HOME</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
@@ -96,7 +97,7 @@
     <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
   </div>
 
-      <div class="section">
+      <div class="section scrollspy" id="sobre_nos">
       <h1 class="header center black-text text-lighten-2">Recreio dos Lobos</h1>
       <!--   Icon Section   -->
       <div class="row">
@@ -135,7 +136,7 @@
   
 
   <div class="container">
-    <div class="section">
+    <div class="section scrollspy" id="contato">
 
       <div class="row">
         <div class="col s12 center">
@@ -148,7 +149,11 @@
     </div>
   </div>
 
-
+<section>
+  <div class="section scrollspy" id="localizacao">
+    
+  </div>
+</section>
   
 
   <footer class="page-footer teal">
@@ -191,6 +196,15 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript">
+    
+      $(document).ready(function(){
+    $('.scrollspy').scrollSpy({scrollOffset:0});
+      
+    
+
+  });
+  </script>
 </div>
   </body>
 </html>
