@@ -10,11 +10,9 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <style type="text/css">
-
-    html, body{
-    width: 100%;
-    height:100%;
-    }
+   .clear{
+    clear: both;
+   }
    .nav-wrapper ul.center {
      display: block;
      width: auto;
@@ -23,7 +21,7 @@
      float: none;
      display: inline-block;
    }
-   #header {
+   #tela_inicial {
 
     background-repeat: repeat;
     height: 100%;
@@ -32,34 +30,39 @@
     background-position: 50%;
    }
    .div_logo {
-    position: absolute;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
    }
    #logo {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
    }
   </style>
 
 </head>
 <body>
-<header id="header" class="center div_logo">
-    <div  class="center div_logo">
+<section class="center ">
+  <div class="row" id="tela_inicial">
+    <div class="center div_logo cols12">
         <img id="logo" src="img/logomarca44.png" alt="Logo">
-        <figcaption ></figcaption>
+        <figcaption style="display: none;">logo recreio dos lobos</figcaption>
         <ul class="main-nav">
           <li>
           <a class="center waves-effect waves-light btn-large" href="#start"><i class="material-icons right">cloud</i>começar</a></li>
         </ul>
     </div>
-</header>
+  </div>
+</section>
 <header>
-    <div class="navbar-fixed section scrollspy" id="start">
-      <nav class="teal" role="navigation" >
+  <div class="clear"></div>
+  <div class="row">
+    <div class="teal section scrollspy navbar-fixed"  id="start">
+      <nav>
         <div class="nav-wrapper ">
-          <ul class="center blue-text text-darken-2  hide-on-med-and-down">
+          <ul class="center hide-on-med-and-down" >
             <li><a  href="#contato">Contato</a></li>
             <li><a  href="#sobre_nos">Sobre Nós</a></li>
             <li><a  href="#localizacao">LOCALIZAÇÃO</a></li>
@@ -75,10 +78,12 @@
         </div>
       </nav>
     </div>
+  </div>  
 </header>
     
 
- 
+ <section class="main-section">
+  <div class="row">
       <div class="section scrollspy" id="sobre_nos">
       <h1 class="header center black-text text-lighten-2">Recreio dos Lobos</h1>
       <!--   Icon Section   -->
@@ -113,8 +118,8 @@
 
     </div>
   </div>
-
-
+</div>
+</section>
   
 
   <div class="container">
