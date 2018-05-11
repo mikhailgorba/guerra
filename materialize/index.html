@@ -10,6 +10,35 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <style type="text/css">
+
+   #tela_inicial {
+    background-size: 100% 100%; /* a background fica estendida de ambos lados*/
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url('img/background.jpg');
+  
+   }
+   #logo { /*caracteristicas da imagem da logomarca */
+    height: 200px;
+    width: 300px;
+    margin-top: 15%; 
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom: 15%;
+   }
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+
+       #logo { /*caracteristicas da imagem da logomarca */
+       height: 130px;
+       width: 200px;
+       margin-top: 45%; 
+       margin-left:10%;
+       margin-right:10%;
+       margin-bottom: 5%;
+   }   
+  }
+
    .clear{
     clear: both;
    }
@@ -21,32 +50,16 @@
      float: none;
      display: inline-block;
    }
-   #tela_inicial {
-
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-    background-image: url('img/background.jpg');
-    background-position: 50%;
-   }
-   .div_logo {
-    height: 100%;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   }
-   #logo {
-    height: 200px;
-    width: 200px;
-   }
+  
+   
+   
   </style>
 
 </head>
 <body>
-<section class="center ">
-  <div class="row" id="tela_inicial">
-    <div class="center div_logo cols12">
+<section class="center">
+  <div class="row" id="tela_inicial"  background="img/background.jpg">
+    <div class="center responsive-img div_logo cols12">
         <img id="logo" src="img/logomarca44.png" alt="Logo">
         <figcaption style="display: none;">logo recreio dos lobos</figcaption>
         <ul class="main-nav">
@@ -68,7 +81,7 @@
             <li><a  href="#localizacao">LOCALIZAÇÃO</a></li>
             <li><a href="#header">HOME</a></li>
           </ul>
-          <ul id="nav-mobile" class="side-nav" style="opacity: 0.3">
+          <ul id="nav-mobile" class="side-nav" style="opacity: 0.9">
            <li><a href="#contato">Contato</a></li>
            <li><a href="#sobre_nos">Sobre Nós</a></li>
            <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
