@@ -39,27 +39,35 @@
    }   
   }
 
-   .clear{
-    clear: both;
-   }
-   .nav-wrapper ul.center {
-     display: block;
-     width: auto;
-   }
-   .nav-wrapper > ul.center li {
-     float: none;
-     display: inline-block;
-   }
-  
-   
    
   </style>
 
 </head>
 <body>
+
+
+
+
+
+
 <section class="center">
   <div class="row" id="tela_inicial"  background="img/background.jpg">
     <div class="center responsive-img div_logo cols12">
+      <nav> <!-- navbar content here   --> 
+     <div class="navbar-fixed">
+      <div class="nav-wrapper">
+         <a href="#" data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light red sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    </div>
+</nav>
+  <ul id="slide-out" class="side-nav">
+    
+    <li><a href="#home">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  
         <img id="logo" src="img/logomarca44.png" alt="Logo">
         <figcaption style="display: none;">logo recreio dos lobos</figcaption>
         <ul class="main-nav">
@@ -70,30 +78,7 @@
   </div>
 </section>
 <header>
-  <div class="clear"></div>
-  <div class="row">
-    <div class="teal section scrollspy navbar-fixed"  id="start">
-      <nav>
-        <div class="nav-wrapper ">
-          <ul class="center hide-on-med-and-down" >
-            <li><a  href="#contato">Contato</a></li>
-            <li><a  href="#sobre_nos">Sobre Nós</a></li>
-            <li><a  href="#localizacao">LOCALIZAÇÃO</a></li>
-            <li><a href="#header">HOME</a></li>
-          </ul>
-          <ul id="nav-mobile" class="side-nav" style="opacity: 0.9">
-           <li><a href="#contato">Contato</a></li>
-           <li><a href="#sobre_nos">Sobre Nós</a></li>
-           <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
-           <li><a href="#header">HOME</a></li>
-          </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-    </div>
-  </div>  
-</header>
-    
+ 
 
  <section class="main-section">
   <div class="row">
@@ -193,17 +178,23 @@
   </footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript">
-    
+
       $(document).ready(function(){
     $('.scrollspy').scrollSpy({scrollOffset:0});
-      
+
+    
+  });
+
+      $(document).ready(function(){
+    $('.btn-floating ').sideNav();
+  });
     
 
-  });
   </script>
 </div>
 
